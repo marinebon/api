@@ -1,5 +1,19 @@
-# This is a Plumber API. In RStudio 1.2 or newer you can run the API by
-# clicking the 'Run API' button above.
+
+# TODO: /species_by_geography
+# Here are a few extra *columns* of information that would be nice to add next:
+#   1. aphia_id
+#      Attribute each species with it's unique ID from MarineSpecies.org also used by OBIS.
+#   2. iucn_extinction_risk
+#      Get the latest extinction risk from the IUCN RedList API.
+#   3. obis_n_occ
+#      Get the number of OBIS occurrences in the given geography.
+#   4. obis_nearest_occ_km
+#      Get the distance (km) to the nearest OBIS occurrence. Value is 0 if occurrences already found within the geography.
+#
+# Likewise extra *arguments* to the endpoint could be added to filter on:
+#   - iucn_extinction_risk
+#   - obis_n_occ
+#   - obis_nearest_occ_km
 
 library(DBI)
 library(dbplyr)
