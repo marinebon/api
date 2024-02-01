@@ -22,7 +22,9 @@ library(terra)
 library(tibble)
 # renv::snapshot()
 
+# See [functions.R](https://github.com/marinebon/aquamapsduckdb/blob/main/inst/app/functions.R)
 source(here("../aquamapsduckdb/inst/app/functions.R"))
+# TODO: migrate functions into dedicated R package
 
 # duckdb connection to AquaMaps ----
 dir_bigdata     <- ifelse(
